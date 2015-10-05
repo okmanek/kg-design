@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+
+        <!-- bootstrap files -->
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+                <!-- Optional theme -->
+                <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+            <!-- javascript -->
+            <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+
+        <style>
+
+            body {
+                margin-top: 100px;
+
+                font-family: 'Fira Sans', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                text-align: justify;
+                color: #aaa;
+            }
+
+            h1 {
+                color: black;
+            }
+
+            /*creates a margin inside */
+            .inside-container {
+                margin: 8px;
+                border: 1px solid #555;
+                text-align: center;
+            }
+
+            /* navbar na górze */
+            nav {
+                color: black;
+
+                position: absolute;
+                top: 20px;
+                right: 58px;
+
+                font-size: 1.3em;
+                /* font-weight: bold; */
+                /* height: 85px; */
+            }
+            nav ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                text-align: center;
+            }
+            nav li {
+                display: inline;
+                padding: 0px; /* hmm */
+                vertical-align: middle;
+            }
+            nav a {
+                text-decoration: none;
+                padding: 0px;
+                color: black;
+                vertical-align: middle;
+
+                -webkit-transition: width 2s;
+                transition: width 2s;
+            }
+            nav a:hover {
+                color: #81BEDA;
+                /* background-color: #ccc;
+                lepiej jakis inny efekt */
+
+                width: 300px;
+                text-decoration: none;
+            }
+            /* i po navbarze */
+
+            #content {
+                margin: auto 333px;
+            }
+
+            img {
+                margin: 0 20px 20px 0;
+            }
+
+            .float-left {
+                float: left;
+            }
+
+            .float-right {
+                float: right;
+            }
+
+            #nasz-podpis {
+                float: right;
+                font-size: 1.3em;
+                color: black;
+            }
+
+        </style>
+
+        <title>KG Design</title>
+    </head>
+
+    <body>
+
+
+        <nav>
+            <ul>
+                <li><a href="../branding.html">< Wstecz</a></li>
+            </ul>
+        </nav>
+
+
+        <div id="content">
+            <h1>Strona firmowa Google</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices vel nunc sed faucibus. Suspendisse vestibulum arcu urna. Vivamus ut nulla tempor, sagittis mauris at, scelerisque lorem. Ut auctor ante at mauris congue, ac luctus lacus sagittis. Nam maximus ante vel metus interdum consequat. Donec ac tortor magna. Ut ac dolor mi. Sed rutrum a odio sed maximus. Morbi sem risus, lobortis eu ipsum posuere, varius suscipit orci. In hac habitasse.</p>
+            <img src="../img/case-study-bg.jpg" width="600" height="475" />
+            <img src="../img/case-study-bg.jpg" width="300" height="250" class="float-left" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices vel nunc sed faucibus. Suspendisse vestibulum arcu urna. Vivamus ut nulla tempor, sagittis mauris at, scelerisque lorem. Ut auctor ante at mauris congue, ac luctus lacus sagittis. Nam maximus ante vel metus interdum consequat. Donec ac tortor magna. Ut ac dolor mi. Sed rutrum a odio sed maximus.</p>
+            <p class="float-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices vel nunc sed faucibus. Suspendisse vestibulum arcu urna. Vivamus ut nulla tempor, sagittis mauris at, scelerisque lorem. Ut auctor ante at mauris congue, ac luctus lacus sagittis. Nam maximus ante vel metus interdum consequat. Donec ac tortor magna. Ut ac dolor mi. Sed rutrum a odio sed maximus. Morbi sem risus, lobortis eu ipsum posuere, varius suscipit orci.</p>
+            <p class="float-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices vel nunc sed faucibus. Suspendisse vestibulum arcu urna. Vivamus ut nulla tempor, sagittis mauris at, scelerisque lorem. Ut auctor ante at mauris congue, ac luctus lacus sagittis. Nam maximus ante vel metus interdum consequat. Donec ac tortor magna. Ut ac dolor mi. Sed rutrum a odio sed maximus. Morbi sem risus, lobortis eu ipsum posuere, varius suscipit orci.</p>
+            <p id="nasz-podpis">Ekipa KG Design</p>
+
+
+        </div>
+
+
+    </body>
+</html>
+

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+
+        <!-- bootstrap files -->
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+                <!-- Optional theme -->
+                <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+            <!-- javascript -->
+            <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+
+        <link href='http://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+
+        <style>
+
+            a:hover {
+                text-decoration: none;
+            }
+
+            body {
+
+                /* font-family: 'Fira Sans', sans-serif;
+                nie hasają polskie litery */
+
+                font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+                font-style: normal;
+                font-weight: 500;
+            }
+
+            /*creates a margin inside */
+            .inside-container {
+                margin: 20px;
+                padding: 20px 75px;
+                border: 1px solid #555;
+                text-align: center;
+            }
+
+            /* navbar na górze */
+            nav {
+                color: black;
+
+                position: absolute;
+                top: 20px;
+                right: 58px;
+
+                font-size: 1.3em;
+                /* font-weight: bold; */
+                /* height: 85px; */
+            }
+            nav ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                text-align: center;
+            }
+            nav li {
+                display: inline;
+                padding: 0px; /* hmm */
+                vertical-align: middle;
+            }
+            nav a {
+                text-decoration: none;
+                padding: 0px;
+                color: black;
+                vertical-align: middle;
+
+                -webkit-transition: width 2s;
+                transition: width 2s;
+            }
+            nav a:hover {
+                color: #81BEDA;
+                /* background-color: #ccc;
+                lepiej jakis inny efekt */
+
+                width: 300px;
+                text-decoration: none;
+            }
+            /* i po navbarze */
+
+
+
+
+
+            /* footer */
+            footer {
+                padding: 60px 10px;
+                padding-bottom: 40px;
+
+                background-color: #333;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            /* szare, skromne linki */
+            footer a {
+                color: #666;
+                font-weight: normal;
+            }
+            footer a:hover {
+                color: white;
+                font-weight: normal;
+            }
+
+            #logo-bottom {
+                position: relative; /* moze margin auto instead? */
+                top: -15px;
+                left: 0px;
+            }
+            /* converts element to orange when hovered */
+            .hover-orange:hover {
+                border: 1px solid orange;
+
+                /* przydaloby sie:
+                   width: 250px;
+                   by na ekranach telefonow lepiej wygladalo
+                   ale wtedy inne bugi
+                */
+            }
+
+            .hover-orange {
+                border: 1px solid transparent;
+            }
+            /* i po footerze */
+
+            .cv-kwadrat {
+                margin: 120px 0px;
+                border: 1px solid black;
+
+                width: 200px;
+                color: black;
+                height: 410px;
+                text-align: center;
+            }
+
+            .inside-inside-container {
+                margin: 10px auto;
+                border: 1px solid black;
+                width: 180px;
+                height: 380px;
+                text-align: left;
+                font-size: 0.8em;
+            }
+
+            .inside-inside-container:hover {
+                background-color: #81BEDA;
+            }
+
+            .caption {
+                margin-top: 35px;
+                height: 55px;
+                border: 1px solid black;
+                font-weight: 500;
+            }
+            .caption:hover {
+                font-weight: bold;
+            }
+
+            /* chujowe szare podswietlenie
+            #cv-obraz-1:hover {
+                background-color: #bbb;
+            }
+            #cv-obraz-2:hover {
+                background-color: #bbb;
+            }
+            #cv-obraz-3:hover {
+                background-color: #bbb;
+            }
+            #cv-obraz-4:hover {
+                background-color: #bbb;
+            }
+            */
+
+        </style>
+
+        <title>KG Design</title>
+    </head>
+
+    <body>
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html">< Wstecz</a>  /</li>
+                <li><a href="branding.html">Branding & id design</a>  /</li>
+                <li><a href="print.html">Print & illustration</a> /</li>
+                <li><a href="webdesign.html">Web design</a></li>
+            </ul>
+        </nav>
+
+
+
+
+        <hr /><br />
+
+
+
+        <div id="cv">
+            <div class="inside-container">
+                <div class="row">
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+
+                        <div class="cv-kwadrat" id="cv-obraz-1">
+                            <div class="inside-inside-container">
+                                <h1><a href="portfolio/1-google.html">Content is coming...</a></h1>
+                            </div>
+
+                            <div class="caption">
+                                opis projektu, lubię placki i placki
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="cv-kwadrat" id="cv-obraz-2">
+                            <div class="inside-inside-container">
+                                <h1>Content is coming...</h1>
+                            </div>
+
+                            <div class="caption">
+                                opis projektu, lubię placki i placki
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="cv-kwadrat" id="cv-obraz-3">
+                            <div class="inside-inside-container">
+                                <h1>Content is coming...</h1>
+                            </div>
+
+                            <div class="caption">
+                                opis projektu, lubię placki i placki
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="cv-kwadrat" id="cv-obraz-3">
+                            <div class="inside-inside-container">
+                                <h1>Content is coming...</h1>
+                            </div>
+
+                            <div class="caption">
+                                opis projektu, lubię placki i placki
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div><!-- end row -->
+            </div><!-- end inside-container -->
+        </div><!-- end cv -->
+
+
+
+
+
+
+
+        <footer>
+            <div class="row">
+                <div class="col-md-2" id="logo-bottom">
+                    <img src="img/logo-bottom.png" onmouseover="this.src='img/logo-bottom-2.png'" onmouseout="this.src='img/logo-bottom.png'"/>
+                </div>
+
+                <div class="col-md-3 hover-orange">
+                    Kamil Grzegorski - graphics designer<br />
+                    <a href="mailto:kamilgrzegorski@gmail.com">kamilgrzegorski@gmail.com</a>
+                </div>
+
+                <div class="col-md-2 hover-orange">
+                    Karol Gałęzia - developer<br />
+                    <a href="mailto:karolgalezia@gmail.com">karolgalezia@gmail.com</a>
+                </div>
+
+                <div class="col-md-2">
+                </div>
+
+                <div class="col-md-3">
+                    <span class="centered-text">Znajdziesz nas również:</span><br /><br />
+                    <img src="img/social/be-icon.jpg" class="hover-orange" />
+                    <img src="img/social/fb-icon.jpg" class="hover-orange" />
+                    <img src="img/social/inst-icon.jpg" class="hover-orange" />
+                    <img src="img/social/yt-icon.jpg" class="hover-orange" /><br /><br />
+                    <a>Site created by KG Graphics and Web Design</a> <!-- lenistwo of doom -->
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

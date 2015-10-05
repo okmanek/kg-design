@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- dot nav -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+        
+        <link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
+
+
+        <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+
+        <!-- <link rel="stylesheet" href="css/style.css"> <!-- CSS reset -->
+
+	    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+
+        <!-- bootstrap files -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+        <!-- javascript -->
+        <!-- <script type="text/javascript" src="js/jquery-2.1.4"></script> -->
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+        <style>
+
+        body {
+            font-weight: 500;
+            font-size: 1.2em;
+
+            background: white;
+        }
+
+        .hvr-bounce-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+
+        /* navbar na górze */
+            nav {
+                color: black;
+
+                position: absolute;
+                top: 50px;
+                left: 58px;
+
+                font-size: 1.3em;
+                /* font-weight: bold; */
+                /* height: 85px; */
+            }
+            nav ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                text-align: center;
+            }
+            nav li {
+                display: inline;
+                padding: 0px; /* hmm */
+                vertical-align: middle;
+            }
+            nav a {
+                text-decoration: none;
+                padding: 0px;
+                color: black;
+                vertical-align: middle;
+
+                -webkit-transition: width 2s;
+                transition: width 2s;
+            }
+            nav a:hover {
+                text-decoration: none;
+            }
+            /* i po navbarze */
+
+
+
+            /* nav hovers */
+            #nav-logo:hover {
+                color: #FF6C7F;
+            }
+            #nav-identyfikacjawizualna:hover {
+                color: #FFB377;
+            }
+            #nav-branding:hover {
+                color: #81BEDA;
+            }
+            #nav-print:hover {
+                color: #FFB377;
+            }
+            #nav-webdesign:hover {
+                color: #FF6C7F;
+            }
+            /* i po nav hoversach */
+
+
+
+            /* wraps whole content */
+            #wrapper {
+                margin: 23px;   /* na glownej jest 20, tu jest 23 zeby bylo rowno. wtf */
+                padding: 20px 5px;
+                border: 2px solid #555;
+                text-align: center;
+            }
+
+            .portfolioItem {
+                display: inline-block;
+
+                width: 240px;
+                height: 240px;
+
+                margin: 20px;
+
+                /* border: 1px solid green; jednak nie */
+
+                background-color: #BAD455;
+            }
+
+            /* only for margin purposes */
+            #itemsWrapper {
+                margin-top: 75px;
+            }
+
+            .item1 {
+                background-image: url("img/small/11.jpg");
+                background-size: 240px 240px;
+                background-repeat: no-repeat;
+            }
+
+            .item2 {
+                background-image: url("img/small/22.jpg");
+                background-size: 240px 240px;
+                background-repeat: no-repeat;
+            }
+
+        @media screen and (max-width: ) {
+
+        }
+
+        @media screen and (max-width: 1200px) {
+            /*body {
+                background-color: red;
+            }*/
+            nav {
+                position: relative;
+                margin: 0 auto;
+                top: 10px;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+
+        }
+
+        </style>
+
+
+    </head>
+
+
+    <body>
+
+        <div id="wrapper">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">< Wstecz</a>  /</li>
+                    <li><a id="nav-logo" href="logo.html">Logo</a>  /</li>
+                    <li><a id="nav-identyfikacjawizualna" href="identyfikacjawizualna.html">Identyfikacja wizualna</a>  /</li>
+                    <li><a id="nav-branding" href="packaging.html">Packaging</a>  /</li>
+                    <li><a id="nav-print" href="illustration.html">Illustration</a> /</li>
+                    <li><a id="nav-webdesign" href="webdesign.html">Web design</a></li>
+                </ul>
+            </nav>
+
+            <div id="itemsWrapper">
+
+                <div class="portfolioItem item1">
+                </div>
+
+                <div class="portfolioItem item2">
+                </div>
+
+                <div class="portfolioItem item1">
+                </div>
+
+                <div class="portfolioItem item2">
+                </div>
+
+                <div class="portfolioItem item1">
+                </div>
+
+                <div class="portfolioItem item2">
+                </div>
+
+                <div class="portfolioItem item1">
+                </div>
+
+                <div class="portfolioItem item2">
+                </div><!-- szósmy -->
+
+            </div><!-- div id="itemsWrapper" end -->
+
+        </div><!-- div id="wrapper" end -->
+
+
+        <script>
+        $(function(){
+            $('.portfolioItem').addClass('hvr-bounce-in');
+            //$("#msgid").html("This is Hello World by JQuery");
+        });
+        </script>
+    </body>
+</html>
