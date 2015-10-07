@@ -38,7 +38,13 @@
             /* same czczionki
             https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,300,300italic,400italic,500italic,700italic&subset=latin,latin-ext
             */
+
+        a {
+            text-decoration: none;
+        }
+
             body {
+                height: 100%;
                 font-size: 14px;
 
                 font-family: 'Fira Sans', sans-serif;
@@ -56,6 +62,15 @@
             ::-moz-placeholder {
                 font-size: 0.7em;
                 font-weight: 100;
+            }
+            h1 {
+                font-size: 1.7em;
+            }
+            h2 {
+                font-size: 1.2em;
+            }
+            .inside-inside-container {
+                font-size: 1.4em;
             }
             /* po czcionkach */
 
@@ -129,7 +144,6 @@
                 vertical-align: middle;
             }
             header nav a {
-                text-decoration: none;
                 padding: 0px;
                 color: black;
                 vertical-align: middle;
@@ -143,12 +157,10 @@
                 lepiej jakis inny efekt */
 
                 width: 300px;
-                text-decoration: none;
             }
 
             header nav a:active {
                 color: black;
-                text-decoration: none;
             }
             /* i po navbarze */
 
@@ -160,10 +172,6 @@
                 margin-top: 45px;
 
                 text-align: center;
-                font-size: 1.7em;
-            }
-            h2 {
-                font-size: 1.2em;
             }
             /* i po headersach */
 
@@ -174,6 +182,7 @@
             #cv p {
                 margin-bottom: 20px;
                 color: #bbb;
+                height: 80%;
             }
 
             /* width="363" height="727" */
@@ -199,7 +208,7 @@
 
                 width: 650px;
                 color: white;
-                height: 530px; /* !!! */
+                height: 50%; /* !!!???!!! */
                 text-align: center;
             }
 
@@ -213,7 +222,6 @@
                 line-height: 150px;
 
                 text-align: left;
-                font-size: 1.4em;
             }
 
             .inside-inside-container:hover {
@@ -265,7 +273,6 @@
             /* only wyrownanie */
             #contact-text {
                 margin: 0 250px;
-
             }
 
             table {
@@ -327,7 +334,6 @@
 			}
 
         #portfolio a {
-            text-decoration: none;
             color: black;
             font-size: 1.1em;
         }
@@ -339,7 +345,6 @@
             background-image: url("img/cv/1.jpg");
             background-position: 50% 50%;
         }
-
         #portfolio-obraz-2 {
             background-image: url("img/cv/2.jpg");
             background-position: 50% 50%;
@@ -352,7 +357,6 @@
         .left-align {
             text-align: left;
         }
-
         /*
         input, textarea {
             background: #333;
@@ -363,9 +367,6 @@
             color: white;
         }*/
 
-        a {
-            text-decoration: none;
-        }
 
         @media screen and (max-width:992px) { /* bugi  874*/
             body {
@@ -442,6 +443,8 @@
 
         <div id="cv" class="block2 height-block page">
             <div class="inside-container">
+
+
 
                 <div class="row">
                     <div class="col-md-3">
@@ -536,6 +539,41 @@
 
         <div id="caseStudy" class="block4 height-block page">
             <div class="inside-container">
+
+                    <nav id="cd-vertical-nav">
+        <ul>
+            <li>
+                <a href="#idHeader" data-number="1">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Strona Główna</span>
+                </a>
+            </li>
+            <li>
+                <a href="#cv" data-number="2">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">CV</span>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio" data-number="3">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#caseStudy" data-number="4">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Case study</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" data-number="5">
+                    <span class="cd-dot"></span>
+                    <span class="cd-label">Kontakt</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
                 <div id="caseStudy-text">
                     <h1>Case study</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultrices vel nunc sed faucibus. Suspendisse vestibulum arcu urna. Vivamus ut nulla tempor, sagittis mauris at, scelerisque lorem. Ut auctor ante at mauris congue, ac luctus lacus sagittis. Nam maximus ante vel metus interdum consequat. Donec ac tortor magna. Ut ac dolor mi. Sed rutrum a odio sed maximus. Morbi sem risus, lobortis eu ipsum posuere, varius suscipit orci. In hac habitasse.</p>
