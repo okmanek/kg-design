@@ -35,7 +35,9 @@
 
         <style>
 
-            /* same czczionki */
+            /* same czczionki
+            https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,300,300italic,400italic,500italic,700italic&subset=latin,latin-ext
+            */
             body {
                 font-size: 14px;
 
@@ -43,13 +45,10 @@
                 font-style: normal;
                 font-weight: 300;
             }
-
             header {
                 font-weight: 500;
                 font-style: normal;
             }
-
-
             footer a {
                 font-weight: normal;
             }
@@ -96,6 +95,7 @@
             /*creates a margin inside */
             .inside-container {
                 margin-top: 20px;
+                height: 98%;
 
                 border-top: 1px solid #555;
                 border-bottom: 1px solid #555;
@@ -170,6 +170,7 @@
 
             #cv {
                 text-align: center;
+                height: 100%;
             }
             #cv p {
                 margin-bottom: 20px;
@@ -178,8 +179,10 @@
 
             /* width="363" height="727" */
             #kamil {
+            	/*width: 100%;/* rwd? */
+
                 position: relative;
-                left: 200px;
+                left: 2%;
             }
 
             /* portfolio */
@@ -215,32 +218,28 @@
             .inside-inside-container:hover {
                 color: white;
             }
-
             #portfolio-obraz-1 .inside-inside-container:hover {
                 background-color: #81BEDA;
-                color: white;
             }
             #portfolio-obraz-2 .inside-inside-container:hover {
                 background-color: #FFB377;
-                color: white;
             }
             #portfolio-obraz-3 .inside-inside-container:hover {
                 background-color: #FF6C7F;
-                color: white;
             }
             /* i po cv */
 
             /* case study */
             #caseStudy {
-                height: 770px;
+                height: 100%;
 
-                background-image: url("img/case-study-bg2.jpg");
+                background-image: url("img/case-study-bg.jpg");
                 background-repeat: no-repeat;
-                background-size: 1200px 781px;
+                background-size: 100% 100%;           
             }
 
             #caseStudy .inside-container {
-                height: 754px; /* caseStudy height -14 czy cos */
+                height: 98%; /* caseStudy height -14 czy cos */
             }
 
             #caseStudy-text {
