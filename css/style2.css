@@ -70,7 +70,7 @@ Main components
   color: #bda3ad;
 }
 .cd-section h1, .cd-section p {
-  position: absolute;
+  position: relative;
   left: 50%;
   top: 50%;
   bottom: auto;
@@ -128,7 +128,7 @@ Main components
 
 .no-touch #cd-vertical-nav {
   position: absolute;
-  right: 80px;
+  right: 3%; /* odleglosc od prawej */
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);
@@ -169,7 +169,7 @@ Main components
   transform: scale(1);
 }
 .no-touch #cd-vertical-nav a:hover .cd-label {
-  opacity: 1;
+  opacity: 0; /* opisy zlikwidowane */
 }
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
   background-color: white;

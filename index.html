@@ -84,6 +84,15 @@
                 /* border: 1px solid white; testing!!!!!!!!!!!!!! */
             }
 
+            .nav-buttons-top {
+                position: relative;
+                top: -42px;
+                left: 95%;
+            }
+            .nav-buttons-top:hover {
+
+            }
+
             /*
             i tam jest pare w tym masz 500bold
             do uzywcia w nagłówkach
@@ -206,9 +215,9 @@
                 margin: 60px 50px;
                 border: 1px solid black;
 
-                width: 650px;
+                width: 20%;
                 color: white;
-                height: 50%; /* !!!???!!! */
+                
                 text-align: center;
             }
 
@@ -382,6 +391,11 @@
 
 
 
+
+
+
+
+
     <body>
 
         <header id="idHeader">
@@ -398,6 +412,9 @@
             </div>
         </header>
 
+        <div class="nav-buttons-top">
+            <a href="#cv"><img src="img/buttons/down-black.jpg" /></a>
+        </div>
 
 
         <nav id="cd-vertical-nav">
@@ -492,7 +509,6 @@
 
 
 
-
         <div id="portfolio" class="block3 height-block page">
             <div class="inside-container">
                 <div class="row">
@@ -531,7 +547,7 @@
                 </div>
             </div>
         </div>
-
+ 
 
 
 
@@ -713,6 +729,11 @@ $(document).ready(function(){
 });
     </script>
 
+<!--
+    <script>
+        $('nav-buttons-top').on('hover', alert('asdda'));
+    </script>
+-->
 
     <script src="scroll/smooth-scroll.js"></script>
 
