@@ -128,7 +128,7 @@ Main components
 
 .no-touch #cd-vertical-nav {
   position: absolute;
-  right: 3%; /* odleglosc od prawej */
+  right: 2.6%; /* odleglosc od prawej */
   top: 50%;
   bottom: auto;
   -webkit-transform: translateY(-50%);

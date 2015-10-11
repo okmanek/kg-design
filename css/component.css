@@ -1,0 +1,96 @@
+/* Common styles and resets */
+
+.dotstyle ul {
+	position: absolute;
+	top: 400px;
+	right: 2%; /* odstep od prawej krawedzi */
+
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dotstyle li {
+	position: relative;
+
+	display: block;
+	float: left;
+	margin: 7px 16px; /* odstep miedzy */
+	width: 9px; /* rozmiar kulek */
+	height: 9px; /* tez */
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: red; /* wut? */
+	background-color: red;
+
+	/*
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	*/
+	text-indent: -999em; /* make the text accessible to screen readers */
+	cursor: pointer;
+	position: absolute;
+}
+
+.dotstyle li a:focus {
+	outline: none;
+}
+
+/* Individual styles and effects */
+
+/* Circle grow */
+
+.dotstyle-circlegrow li a {
+	overflow: hidden;
+	background-color: transparent; /* to ma tak zostac */
+	box-shadow: inset 0 0 0 1px black; /* obramowanie!!!!!!!!!!!!11111111111*/
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.dotstyle-circlegrow li a::after {
+	content: '';
+	position: absolute;
+	width: 90%;
+	height: 80%;
+	left: 0px; /* wypelnienie w srodku */
+	top: 1px;
+	border-radius: 50%;
+	background-color: #cc9900; /* kolor wypelnienia!!!!!!!!!!!!!!1111111111111 */
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	-webkit-transition: -webkit-transform 0.3s ease;
+	transition: transform 0.3s ease;
+}
+
+.dotstyle-circlegrow li a:hover,
+.dotstyle-circlegrow li a:focus {
+	opacity: 0.7;
+}
+
+.dotstyle-circlegrow li a:hover { /* wypelnienie po najechaniu myszka */
+	background-color: black;
+}
+
+.dotstyle-circlegrow li.current a::after {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
