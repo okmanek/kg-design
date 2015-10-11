@@ -67,12 +67,12 @@
 .dotstyle-circlegrow li a::after {
 	content: '';
 	position: absolute;
-	width: 90%;
-	height: 80%;
-	left: 0px; /* wypelnienie w srodku */
+	width: 75%;
+	height: 75%;
+	left: 1px; /* wypelnienie w srodku */
 	top: 1px;
 	border-radius: 50%;
-	background-color: #cc9900; /* kolor wypelnienia!!!!!!!!!!!!!!1111111111111 */
+	background-color: #F29B00; /* kolor wypelnienia!!!!!!!!!!!!!!1111111111111 */
 	-webkit-transform: scale(0);
 	transform: scale(0);
 	-webkit-transform-origin: 50% 50%;
